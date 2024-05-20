@@ -1,0 +1,180 @@
+==============================================================================
+			Details administratifs
+==============================================================================
+
+-	Aucune forme de communication n'est permise. Il est interdit de
+	discuter, d'ecouter de la musique, de faire du bruit, de perturber ou
+	de nuire, de quelque maniere que ce soit, le bon deroulement de
+	l'examen.
+
+-	Vous pouvez vous munir de feuilles vierges, d'un stylo et d'une
+	bouteille d'eau. Tout autre objet, materiel ou nourriture est
+	strictement interdit.
+
+-	Vos telephones portables doivent etre eteints et ranges dans vos sacs.
+	Ces derniers doivent etre deposes a l'endroit indique par le ou les
+	surveillants.
+
+-	C'est un programme qui s'occupe du ramassage, respectez les noms, les
+	chemins, les fichiers et les repertoires...
+
+-	Toute sortie est definitive.
+
+-	Toute fraude (ou tentative) sera sanctionne par la note de -42.
+
+-	Vous devez creer un fichier "auteur" à la racine de votre depot qui doit
+	contenir votre login, suivi d'un retour a la ligne.
+
+		user@exam> cat -e auteur
+		prenom.nom@epitech.eu$
+		user@exam>
+
+==============================================================================
+				Preliminaires
+==============================================================================
+
+-	Le nom du depot sera "Exam_SQL_07".
+
+-	Toutes les questions sont independantes. Vous etes libres de les
+	traiter dans l'ordre que vous voulez. Une bonne reponse vaut 1 point,
+	une mauvaise reponse vaut 0 point.
+
+-	Vous avez le droit d'utiliser qu'une seule fois chacun des mots cles
+	"SELECT", "AND" et "OR" par question. Toute reponse comportant plus
+	d'une fois l'un de ces mots cles sera consideree comme fausse.
+	Les mots clefs suivant sont interdit: ALTER UPDATE DELETE INSERT DROP CREATE.
+	
+-	Pour chaque question, vous devez rendre un fichier nomme "ex_XX.sql"
+	ou "XX" est le numero de la question sur 2 chiffres. Par exemple, pour
+	l'exercice 05 le fichier doit se nommer "ex_05.sql".
+
+-	La seule base de donnees a utiliser est "wac_exam". Vous n'avez pas
+	besoin d'ecrire la commande "USE wac_exam" dans les fichiers de
+	reponse.
+
+
+==============================================================================
+				Questions
+==============================================================================
+
+01
+	Faire une requete qui affiche le nombre de membres et leur âge moyen, arrondi à l'entier le plus proche.
+	Les colonnes se nommeront "Nombre de membres" et "Age moyen".
+	Un homme de 55 ans et 11 mois est considéré comme ayant 55 ans.
+
+--
+
+02
+	Faire une requete qui affiche le code postal des villes où il y a plus d'un individu, triés par code postal croisant.
+	La colonne se nommera "Code postaux"
+
+--
+
+03
+	Faire une requete qui affiche le nombre de films dont le titre commence
+	par "eX" (case-sensitive).
+	La colonne sera nommee 'Number of movies that start whith "eX"'.
+
+--
+
+04
+	Faire une requete qui affiche les 92 premiers caractères du résumé pour les films dont l'id est pair et entre 42 et 84.
+	La colonne se nommera "Resumes"
+
+--
+
+05
+	Faire une requete qui affiche les adresses mail des membres, en remplaçant "machin.com" par "webacademie.root".
+	La liste sera trié dans l'ordre alphabétique inversé et le nom de la colonne sera "New mail".
+
+--
+
+06
+	Faire une requete qui affiche pour chaque film son titre et le nombre de jours depuis sa sortie. 
+	La date de sortie doit être définie.
+	Les colonnes se nommeront "Titre du film" et "Nombre de jours passes"
+
+--
+
+07
+	Faire une requete qui affiche le titre des films pour lesquels la première lettre se situe entre "O" et "T" inclus.
+	La liste sera triés par ordre alphabetique inversé. 
+	La colonne se nommera "Titre du film"
+
+--
+
+08
+	Faire une requete qui affiche les noms des genres dont l'id n'est pas situés entre 6 et 12.
+	
+--
+
+09
+	Faire une requete qui affiche le titre et la durée minimum de tout les films, triés par ordre décroissant de longueur de titre, puis par durée croissante.
+
+	
+--
+
+10
+	Faire une requete qui affiche la somme de toutes les années de production de tous les films dans une colonne "Somme des annees de production".
+	Chaque année ne doit servir qu'une seule fois.
+--
+
+11
+	Faire une requete qui affiche le nom du genre et le nombre de films
+	pour chaque genre. Trie par nombre de films decroissant puis par nom
+	de genre croissant. Les colonnes seront nommees "Nom du genre" et
+	"Nombre de films".
+
+--
+12
+    Faire une requete qui affiche pour chaque département le nombre de ville qu'il contient. Les colonnes seront nommees "Departement" et "Nombre de villes".
+    (ex: 78500 = 78 = 10 villes)
+
+--
+13
+	Faire une requete qui affiche le titre des 42 dernier films dans la table film.
+	La colonne sera nommee "Title of the last 42 movies".
+	Trié par id décroissant.
+
+--
+14
+	Faire une requete qui affiche le nom de l'abonnement le plus cher,
+	ainsi que son prix. Les colonnes seront nommees "Nom de l'abonnement
+	le plus cher" et "Prix".
+
+--
+15
+	Faire une requete qui affiche le nombre de films produits par annee,
+	trie par annee de production decroissante. Les colonnes seront nommees
+	"Nombre de films" et "Annee de production".
+
+--
+16
+	Faire une requete qui affiche la duree moyenne des films arrondis à la 2eme
+	décimal.
+	La colonne sera nommee "Average duration".
+
+--
+17
+	Faire une requete qui affiche le titre du film et le nom du
+	distributeur pour les films dont l'identifiant est 21, 87, 263, 413 ou
+	633. Les colonnes seront nommees "Titre du film" et "Nom du
+	distributeur".
+
+--
+18
+	Faire une requete qui affiche les titres de films du genre "action" et "romance".
+
+--
+19
+	Faire une requete qui affiche pour chaque etage son numero, le nombre
+	total de sieges et le nombre total de salles, trie par nombre de
+	sieges croissant. Les colonnes seront nommees "Numero etage", "Nombre
+	total de sieges" et "Nombre total de salles".
+
+--
+20
+	Faire une requete qui affiche le nombre de tout les films dans une colonne "Nombre de films".
+
+--
+
